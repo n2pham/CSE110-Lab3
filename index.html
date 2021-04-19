@@ -1,47 +1,57 @@
 <!DOCTYPE html>
     <head>
+        <link rel="stylesheet" href="styles.css">
         <title>My 3 Day Journal</title>
         <meta charset="UTF-8">
         <meta name="description" content="My 3 Day Journal">
         <link rel="icon" href="favicon.ico">
+        <style>
+            a:active{
+                background-color: rgb(4, 0, 255); /*pseudo class: active*/
+            }
+        </style>
     </head>
     <body>
-        <h1>My 3 Day Journal</h1>
-        <div>Journal Days</div>
+        <span> Hidden Message</span>
+        <h1 >My 3 Day Journal</h1>
         <nav>
-            <ul>
-                <li><a href="#Day1">Day1 Journal</a></li>
+            <ul class="flex">
+                <li ><a href="#Day1">Day1 Journal</a></li>
                 <li><a href="#Day2">Day2 Journal</a></li>
                 <li><a href="Day3">Day3 Journal</a></li>
             </ul>
         </nav>
 
     <main>
+    <div>
     <section>
-        <h1 id="Day1"> <span style="color:blue;font-weight:bold">Day 1</span></h1>
-        <h2><span style="color:orange;font-weight:bold">Highlights & Lowlights</span></h2>
-            <div>Highlights</div>
-                <ul>
-                    <li>Went to get some boba</li>
-                    <li>Won in a my group competition</li>
-                    <li>School</li>
+        <hr>
+        <h1 id="Day1"> Day 1</h1>
+        <h2>Highlights & Lowlights</h2>
+            <div id="right" style="background-color:#ffa500;font-size: 0.3in;">Highlights
+                <ul >
+                    <li class="display" id="right">Went to get some boba</li>
+                    <li class="display" id="right">Won in a my group competition</li>
+                    <li class="display" id="right">School</li>
                 </ul>
-            <div>Lowlights</div>
+            </div>
+            <div id="left" style="color:blue;font-weight:bold;background-color:#5eff00;font-size: 0.3in;"> Lowlights</div>
                 <ol>
-                    <li>Had to look at housing</li>
-                    <li>Unable to work on research</li>
-                    <li>Sleep</li>
+                    <li id="left" >Had to look at housing</li>
+                    <li id="left" >Unable to work on research</li>
+                    <li id="left" >Sleep</li>
                 </ol>
         <hr>
-        <h3><span style="color:red;font-weight:bold">What needs to be done</span></h3>
-            <ol>
-                <li>Gym</li>
+        <h3>What needs to be done</h3>
+            <ol class="grid">
+                <div></div>
+                <li>Gym</li> 
                 <li>Homework</li>
                 <li>Groceries</li>
             </ol>
         <hr>
-        <h3><span style="color:green;font-weight:bold">Vents</span></h3>
-            <p>Today I worked on some of my HW but after 1hr, I could not continue to focus and had to 
+        <h3>Vents</h3>
+            <p class="p1">Today I worked on some of my HW but after 1hr, I could not continue to focus and had to 
                 take a break. I decided to go for a walk and look at my inspiration picture <img src="jerry.jpg" width="50" height="50" alt="jerry face"> and this gave 
                 me the boost I needed for the morning. After I wanted to work on my research, but I realized that I had some school work I had to do 
                 so continued to finish my work. Then I went to get groceries, and stopped by to get a bubble tea. Finally, my everyday routine is to go to the gym. 
@@ -52,32 +62,33 @@
                 Sorry, your browser doesn't support embedded videos.
             </video>
     </section>
-
+    <hr>
     <section>
-        <h1 id="Day2"> <span style="color:blue;font-weight:bold">Day 2</span></h1>
-        <h2><span style="color:orange;font-weight:bold">Highlights & Lowlights</span></h2>
-            <div>Highlights</div>
+        <h1 id="Day2"> Day 2</h1>
+        <h2>Highlights & Lowlights</h2>
+            <div style="background-color:#ffa500;font-size: 0.3in;" id="right">Highlights
                 <ul>
-                    <li>Worked out my back at the Gym</li>
-                    <li>Finished part of my Research</li>
-                    <li>110 Lecture</li>
+                    <li id="right">Worked out my back at the Gym</li>
+                    <li id="right">Finished part of my Research</li>
+                    <li id="right">110 Lecture</li>
                 </ul>
-            <div>Lowlights</div>
+            </div>
+            <div id="left"  style="color:blue;font-weight:bold;font-size: 0.3in;"> Lowlights</div>
                 <ol>
-                    <li>Was unproductive</li>
-                    <li>Had to eat microwave food</li>
-                    <li>Hurt my hand</li>
+                    <li id="left" >Was unproductive</li>
+                    <li id="left" >Had to eat microwave food</li>
+                    <li id="left" >Hurt my hand</li>
                 </ol>
         <hr>
-        <h3><span style="color:red;font-weight:bold">What needs to be done</span></h3>
-            <ol>
+        <h3>What needs to be done</h3>
+            <ol class="grid">
                 <li>Gym</li>
                 <li>Homework</li>
                 <li>Research</li>
             </ol>
         <hr>
-        <h3><span style="color:green;font-weight:bold">Vents</span></h3>
-            <p>The other day I played my favorite song to wake up in the morning as it helps me feel energize and wake up in the morning. 
+        <h3>Vents</h3>
+            <p class="p2">The other day I played my favorite song to wake up in the morning as it helps me feel energize and wake up in the morning. 
                 I decided today was the day when I spend my whole day on my research. After doing it for 5 hours, I realized that I missed 2 classes.
                 However, it was recorded so I had my sigh of relief. I had to eat microwaved food because my family was busy that day that it was not
                 too bad because I had attended 110 lecture and that made up my horrid day. After, I went to the gym to work out, but during the session,
@@ -89,32 +100,34 @@
                 Sorry, your browser doesn't support embedded videos.
             </video>
     </section>
-
+    <hr>
     <section>
-        <h1 id="Day3"> <span style="color:blue;font-weight:bold">Day 3</span></h1>
-        <h2><span style="color:orange;font-weight:bold">Highlights & Lowlights</span></h2>
-            <div>Highlights</div>
+        <h1 id="Day3" style="color:blue;font-weight:bold">Day 3</h1>
+        <h2>Highlights & Lowlights</h2>
+            <div style="background-color:#ffa500;font-size: 0.3in;" id="right">Highlights
                 <ul>
-                    <li>Went to get some boba</li>
-                    <li>Had some great Pho</li>
-                    <li>School</li>
+                    <li id="right">Went to get some boba</li>
+                    <li id="right">Had some great Pho</li>
+                    <li id="right">School</li>
                 </ul>
-            <div>Lowlights</div>
+            </div>
+            <div id="left" style="color:blue;font-weight:bold;font-size: 0.3in;"> Lowlights</div>
                 <ol>
-                    <li>Unable to go to the gym</li>
-                    <li>Unable to figure out the problem on research</li>
-                    <li>Sleep</li>
+                    <li id="left" >Unable to go to the gym</li>
+                    <li id="left" >Unable to figure out the problem on research</li>
+                    <li id="left" >Sleep</li>
                 </ol>
+                
         <hr>
-        <h3><span style="color:red;font-weight:bold">What needs to be done</span></h3>
-            <ol>
+        <h3>What needs to be done</h3>
+            <ol class="grid">
                 <li>Gym</li>
                 <li>Homework</li>
                 <li>Buy a Gift for my Mum</li>
             </ol>
         <hr>
-        <h3><span style="color:green;font-weight:bold">Vents</span></h3>
-            <p>
+        <h3>Vents</h3>
+            <p class="p3">
                 I woke up this morning and remembered that today is my Mum's birthday
                 so I need to buy her a gift. I start the day with some bubble tea. I always 
                 go for the regular tea, but today I decided to change it up. I heard that my mom
@@ -134,20 +147,21 @@
         <summary>Surprise</summary>
         <p>You Are Awesome</p>
     </details>
+    </div>
     </main>
-    <footer>
+    <footer >
         <p>Author: Nhan Pham<br>
         <a href="mailto:n2pham@ucsd.edu">n2pham@ucsd.edu</a></p>
     <br>
     </footer>  
 
-        <form method="get" class="form-example">
+        <form method="get" class="form-example" id="left">
 
             <div class="form-example">
                 <label for="title">Title of Journal Entry</label>
                 <input type="text" name="title" id="title" required="">
             </div>
-            <fieldset>
+            <fieldset id="left">
             <legend>Information:</legend>
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname"><br><br>
@@ -161,7 +175,7 @@
             <br>
             
             <br>
-            <fieldset>
+            <fieldset >
                 <legend>How did you feel Today?</legend>
 
                 <input type="radio" id="happy" name="emotion">
