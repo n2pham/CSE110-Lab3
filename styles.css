@@ -1,0 +1,120 @@
+/* Add Background color*/
+body {
+    background-color: rgb(230, 173, 173);
+  }
+*{ /*universal selector*/
+    text-align: center;
+}
+a[target=_blank]{ /*attribute selector*/
+  background-color: yellow;
+}
+.p1 {
+  text-decoration: overline;
+  background-color: #567895;
+  border-radius: 10px;
+  border: 5px solid #0b385f;
+  border-bottom-style: dashed;
+  color: #fff;
+}
+.p2 {
+  background-color: #567895;
+  border-radius: 10px;
+  border: 5px solid #0b385f;
+  border-bottom-style: dashed;
+  color: #fff;
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+}
+.p3 {
+  
+  text-decoration: underline;
+  background-color: #567895;
+  border-radius: 10px;
+  border: 5px solid #0b385f;
+  border-bottom-style: dashed;
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.display {
+  display: block;
+}
+#right {
+  text-align: right;
+}
+#left {
+  text-align: left;
+}
+h1 {
+  color: navy;
+  margin-left: 20px;
+  font-size: 60px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+div h2 {
+  display: block;
+  height: 20px;
+  width: 50pc;
+  font-size: 3pc;
+  text-decoration: underline;
+}
+h3{
+  font-size: 0.3in;
+  border: 15px solid rgb(66, 0, 128);
+  max-width: fit-content;
+}
+
+h4 {
+  font-size: 2pc;
+  line-height: 30px;
+  border: 15px solid rgb(0, 92, 128);
+  text-align: center;
+}
+div p { /*descendant combinator*/
+  background-color: burlywood;
+}
+div > ul { /*child combinator*/
+  background-color: coral;
+}
+
+div ~ li { /*sibling combinator*/
+  background-color: yellow;
+}
+
+div + ol { /*Adjacent sibling combinator*/
+  background-color:red;
+}
+
+li {
+  font-size: 1.5rem;
+  margin: auto;
+  padding: 10px, 10px, 10px, 10px;
+  display: block;
+}
+p {
+  font-size: 1em;
+  line-height: 50px;
+  width: 1000px;
+  text-align: justify;
+  letter-spacing: 3px;
+  margin: 20px;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+}
+span {
+  font-size: 0.5em; /* relative unit 1 */
+  display: none; /* hides random use of span, */
+}
+.flex{
+  display: flex;
+  flex: list-item;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+.grid{
+  display: grid;
+  grid: contents;
+  grid-template-columns: auto;
+  grid-row: start;
+}
